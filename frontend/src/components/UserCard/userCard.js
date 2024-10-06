@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./userCard.css";
 // import Header from "../Header/header";
 import { useNavigate } from "react-router-dom";
-import axios from "axios"; // For making API requests
+import axios from "axios"; 
+
 
 const UserCard = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const UserCard = () => {
         setUserFormState(
           usersData.map(() => ({
             milkQty: "0L",
-            dailyStatus: "yes",
+            // dailyStatus: "yes",
           }))
         );
       })
