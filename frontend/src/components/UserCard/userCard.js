@@ -63,7 +63,7 @@ const UserCard = () => {
     axios
       .post("http://localhost:8000/api/milk-supply", updatedData)
       .then((response) => {
-        console.log("Milk supply data submitted:", response.data);
+        // console.log("Milk supply data submitted:", response.data);
       })
       .catch((error) => {
         console.error("Error submitting milk supply data:", error);

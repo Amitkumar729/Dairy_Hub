@@ -27,7 +27,7 @@ const Dashboard = () => {
           month: selectedMonth,
         })
         .then((response) => {
-          console.log("response: ", response);
+          // console.log("response: ", response);
           setMonthlyReport(response.data);
         })
         .catch((error) => {
